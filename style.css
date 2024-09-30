@@ -1,4 +1,5 @@
-body {
+ /* Definir el contenedor principal */
+ body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,15 +18,15 @@ body {
 
   #grid {
     display: grid;
-    grid-template-columns: repeat(6, 50px);
-    grid-template-rows: repeat(6, 50px);
-    gap: 5px;
+    grid-template-columns: repeat(3, 100px); /* Ahora solo 3 columnas */
+    grid-template-rows: repeat(3, 100px); /* Ahora solo 3 filas */
+    gap: 10px; /* Espacio entre las celdas */
   }
 
   .cell {
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
+    width: 100px;
+    height: 100px; /* Celdas más grandes */
+    border: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,8 +34,8 @@ body {
 
   /* Imagen que se mueve */
   #image {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px; /* Imagen más grande */
   }
 
   /* Botones de control */
@@ -48,13 +49,13 @@ body {
   .control-buttons {
     display: flex;
     justify-content: center;
-    margin: 5px;
+    margin: 10px;
   }
 
   /* Tamaño de los botones */
   button {
-    width: 60px;
-    height: 60px;
-    font-size: 20px;
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
     cursor: pointer;
   }
